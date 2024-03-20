@@ -1,10 +1,12 @@
-# EXP NO 2: DATA DEFINITION LANGUGE COMMANDS 
-### DATE :13/03/2024
-## AIM:
-To create a student database and execute DDL queries using SQL.
 
+# EXP NO 2: DATA DEFINITION LANGUGE COMMANDS 
+
+### DATE: 20/03/2024
+
+## AIM: To create a student database and execute DDL queries using SQL.
 
 ## THEORY
+
 ### DDL (Data Definition Language)
 
 * DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema.
@@ -21,48 +23,55 @@ To create a student database and execute DDL queries using SQL.
 5. RENAME: This is used to rename an object existing in the database.
 
 ## Query:
-### 1) Create a database studentdb
-```
-create database studentdbb;
-```
-## OUTPUT:
-![Screenshot 2024-03-13 105513](https://github.com/arun1111j/DBMS/assets/128461833/89fa3b98-f16a-47c1-8c5d-d6bea2a5ac4a)
 
-### 2) Create a table student and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
-# SQL QUERY:
+### 1) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
 
+### SQL QUERY: 
 ```
- create table student(RegisterNumber int,Name varchar(100),Age int,Address varchar(250),PhoneNumber int) ;
+ create table learner(RegisterNumber int,Name varchar(100),Age int,Address varchar(250),PhoneNumber int) ;
 ```
-## OUTPUT :
-![image](https://github.com/arun1111j/DBMS/assets/128461833/395d7e11-abf2-4a2b-9d37-f3fe816f0726)
-### 3) Alter the above student table by adding another attribute department
-# SQL QUERY:
+
+### OUTPUT:
+![image](https://github.com/SivaramakrishnanBaskar/DBMS/assets/119476322/851aa02c-f946-445d-8155-9ebcb0e637eb)
+
+### 2) Alter the above student table by adding another attribute department
+
+### SQL QUERY: 
 ```
-rename table student to mystudent;
+ alter table learner add Collage varchar(20);
 ```
-## OUTPUT :
-![Screenshot 2024-03-13 105856](https://github.com/arun1111j/DBMS/assets/128461833/1aabf8f2-2f7b-4705-a471-feec1c925f89)
-### 4) Rename the student table to mystudent
-# SQL QUERY:
+
+### OUTPUT:
+![image](https://github.com/SivaramakrishnanBaskar/DBMS/assets/119476322/66d02ad3-ff8e-441a-8b86-0ef9b658177d)
+
+### 3) Rename the student table to mystudent
+
+### SQL QUERY: 
 ```
-rename table student to mystudent;
+ rename learner to students;
 ```
-## OUTPUT :
-![image](https://github.com/arun1111j/DBMS/assets/128461833/78991881-166a-4506-8360-46fdef70bdf7)
-### 5) Delete the mystudent rows using truncate keyword
-# SQL QUERY:
+
+### OUTPUT:
+![image](https://github.com/SivaramakrishnanBaskar/DBMS/assets/119476322/e75f4fa8-6fe1-40c9-bdfb-d21482a15a7d)
+
+### 4) Delete the mystudent rows using truncate keyword
+
+### SQL QUERY: 
 ```
- truncate table mystudent;
+ truncate table students ;
 ```
-## OUTPUT :
-![image](https://github.com/arun1111j/DBMS/assets/128461833/a62ed4ad-c385-4dee-891c-baeff4a16a83)
-### 4) Drop the mystudent table
-# SQL QUERY:
+
+### OUTPUT:
+![image](https://github.com/SivaramakrishnanBaskar/DBMS/assets/119476322/6f10dc12-5b27-4200-833e-a85882e9c3ba)
+
+### 5) Drop the mystudent table
+ 
+### SQL QUERY: 
 ```
- drop table mystudent;
+ drop table students;
 ```
-## OUTPUT :
-![Screenshot 2024-03-13 110223](https://github.com/arun1111j/DBMS/assets/128461833/a851e491-90ab-47e0-91f9-279fc16ef0c2)
+### OUTPUT:
+![image](https://github.com/SivaramakrishnanBaskar/DBMS/assets/119476322/42d72dc3-db28-4644-b090-b2615e46960a)
+
 ## Result:
-         Thus the basic D
+Thus the basic DDL commands in SQL are executed. 
