@@ -1,5 +1,5 @@
 # EXP NO 2: DATA DEFINITION LANGUGE COMMANDS 
-### DATE
+### DATE :13/03/2024
 ## AIM:
 To create a student database and execute DDL queries using SQL.
 
@@ -22,53 +22,47 @@ To create a student database and execute DDL queries using SQL.
 
 ## Query:
 ### 1) Create a database studentdb
+```
+create database studentdbb;
+```
+## OUTPUT:
+![Screenshot 2024-03-13 105513](https://github.com/arun1111j/DBMS/assets/128461833/89fa3b98-f16a-47c1-8c5d-d6bea2a5ac4a)
 
-### SQL QUERY:
+### 2) Create a table student and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
+# SQL QUERY:
 
-### OUTPUT:
-
-### 2) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
-
-### SQL QUERY: 
-
-
-### OUTPUT:
-
+```
+ create table student(RegisterNumber int,Name varchar(100),Age int,Address varchar(250),PhoneNumber int) ;
+```
+## OUTPUT :
+![image](https://github.com/arun1111j/DBMS/assets/128461833/395d7e11-abf2-4a2b-9d37-f3fe816f0726)
 ### 3) Alter the above student table by adding another attribute department
-
-### SQL QUERY: 
-
-### OUTPUT:
-
+# SQL QUERY:
+```
+rename table student to mystudent;
+```
+## OUTPUT :
+![Screenshot 2024-03-13 105856](https://github.com/arun1111j/DBMS/assets/128461833/1aabf8f2-2f7b-4705-a471-feec1c925f89)
 ### 4) Rename the student table to mystudent
-
-### SQL QUERY: 
-
-
-
-### OUTPUT:
-
+# SQL QUERY:
+```
+rename table student to mystudent;
+```
+## OUTPUT :
+![image](https://github.com/arun1111j/DBMS/assets/128461833/78991881-166a-4506-8360-46fdef70bdf7)
 ### 5) Delete the mystudent rows using truncate keyword
-
-### SQL QUERY: 
-
-
-### OUTPUT:
+# SQL QUERY:
+```
+ truncate table mystudent;
+```
+## OUTPUT :
+![image](https://github.com/arun1111j/DBMS/assets/128461833/a62ed4ad-c385-4dee-891c-baeff4a16a83)
 ### 4) Drop the mystudent table
- 
-### SQL QUERY: 
-
-
-### OUTPUT:
-
-
-
-
-
-
-
-
+# SQL QUERY:
+```
+ drop table mystudent;
+```
+## OUTPUT :
+![Screenshot 2024-03-13 110223](https://github.com/arun1111j/DBMS/assets/128461833/a851e491-90ab-47e0-91f9-279fc16ef0c2)
 ## Result:
-         Thus the basic DDL commands in SQL are executed. 
-
-
+         Thus the basic D
